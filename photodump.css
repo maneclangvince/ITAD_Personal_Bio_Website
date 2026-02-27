@@ -41,15 +41,17 @@ body {
 .menu a:hover {
     text-decoration: 2px solid underline;
 }
-.nav-buttons, .block {
+.nav-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    height: 100px;
     gap: 20px;
-    margin: 40px 100px 40px 100px;
-    top: 0;
+    flex-wrap: wrap;
+    padding: 44px 100px 20px 100px;
+    background: #ebf2d9;
+    position: sticky;
+    border-bottom: 2px solid #0d4d1b;
+    top: 60px;
 }
 .nav-buttons a{
     padding: 0 20px;
@@ -62,13 +64,19 @@ body {
     color: black;
     transition: 0.3s;
 }
+.nav-buttons a:hover {
+    background-color: #0d4d1b;
+    color: white;
+}
 .category{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     background: #0d4d1b3c;
     margin: 40px 100px;
+    padding: 20px 0;
     border-radius: 12px;
 }
 .category h1{
@@ -78,10 +86,6 @@ body {
 .category p{
     margin: 0 0 16px 0;
     text-align: center;
-}
-.nav-buttons a:hover {
-    background-color: #0d4d1b;
-    color: white;
 }
 .gallery {
     column-count: 5;
@@ -99,6 +103,7 @@ body {
     width: 100%;
     display: flex;
     border-radius: 12px;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
 }
 .gallery img:hover {
     box-shadow: 0 0 0 8px #0d4d1b9c;

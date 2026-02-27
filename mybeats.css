@@ -11,7 +11,7 @@ body {
 .nav-container {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background: #0d4d1b;
     display: flex;
     justify-content: space-between;
@@ -39,37 +39,32 @@ body {
 .menu a:hover {
     text-decoration: 2px solid underline;
 }
-.swap {
+.nav-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 61%;
-    margin-bottom: 12px;
-    transition: 0.3s;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 44px 100px 20px 100px;
+    background: #ebf2d9;
+    position: sticky;
+    border-bottom: 2px solid #0d4d1b;
+    top: 60px;
+    z-index: 1;
 }
-.swap a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    transition: 0.3s;
-}
-.prev, .next {
-    border: 2px solid #0d4d1b;
+.nav-buttons a{
     padding: 0 20px;
-    border-radius: 8px;
-}
-.swap a {
+    display: flex;
+    justify-content: center;
+    background: transparent;
     text-decoration: none;
+    border: 2px solid #0d4d1b;
+    border-radius: 12px;
     color: black;
+    transition: 0.3s;
 }
-
-.prev:hover, .next:hover {
-    background: #0d4d1b;
-}
-
-.prev:hover a, .next:hover a {
+.nav-buttons a:hover {
+    background-color: #0d4d1b;
     color: white;
 }
 .media-container {
@@ -92,6 +87,7 @@ body {
     border-radius: 12px;
     padding: 20px;
     width: 1000px;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
 }
 .media-container p {
     width: 600px;

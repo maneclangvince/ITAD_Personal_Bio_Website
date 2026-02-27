@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 28px 100px;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -46,7 +46,7 @@ body {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 30px 100px 20px 100px;
+    padding: 44px 100px 20px 100px;
     background: #ebf2d9;
     position: sticky;
     border-bottom: 2px solid #0d4d1b;
@@ -102,6 +102,7 @@ body {
     width: 100%;
     display: flex;
     border-radius: 12px;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
 }
 .gallery img:hover {
     box-shadow: 0 0 0 8px #0d4d1b9c;
